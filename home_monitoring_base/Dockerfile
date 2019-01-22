@@ -4,7 +4,7 @@ MAINTAINER Jean-Francois Labonte <jeff.labonte12@gmail.com>
 RUN apt update && \
     apt install -qy \
     -o APT::Install-Recommend=false -o APT::Install-Suggests=false \
-    python3 python3-virtualenv libpython3.7 python3-flask
+    python3 python3-virtualenv libpython3.7
 
 ADD scripts/entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
