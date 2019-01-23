@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM nvidia/cuda:latest
 MAINTAINER Jean-Francois Labonte <jeff.labonte12@gmail.com>
 
 RUN apt update && \
