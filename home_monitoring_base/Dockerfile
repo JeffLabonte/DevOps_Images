@@ -8,6 +8,7 @@ RUN apt update && \
 
 ADD scripts/entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
+RUN virtualenv /env
 ENTRYPOINT ["entrypoint.sh"]
 
 LABEL application=home_monitoring
